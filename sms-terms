@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Terms &amp; Conditions – Engage Communications</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .logo-bar {
+      background: #ffffff;
+      padding: 15px 20px;
+      border-bottom: 2px solid #e0e0e0;
+      text-align: center;
+    }
+
+    .logo-bar img {
+      max-width: 100%;
+      height: auto;
+      max-height: 70px;
+      display: inline-block;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px 20px;
+      line-height: 1.7;
+      background: #ffffff;
+      margin: 30px auto;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      width: 90%;
+    }
+
+    .main-content h1 {
+      font-size: 1.6rem;
+      color: #1a4fa0;
+      margin-bottom: 8px;
+    }
+
+    .main-content h2 {
+      font-size: 1.1rem;
+      color: #222;
+      margin-top: 30px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 6px;
+    }
+
+    .main-content p {
+      margin: 12px 0;
+    }
+
+    .main-content a {
+      color: #1a4fa0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .main-content a:hover {
+      text-decoration: underline;
+    }
+
+    .keyword-box {
+      background: #f9f9fc;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin: 20px 0;
+    }
+
+    .keyword-box p {
+      margin: 6px 0;
+    }
+
+    .keyword-box strong {
+      display: inline-block;
+      min-width: 70px;
+      color: #1a4fa0;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 24px;
+    }
+
+    .footer-widget {
+      background: #222;
+      color: #f1f1f1;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .footer-widget img.footer-logo {
+      width: 35px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .footer-widget a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    .footer-widget strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="logo-bar">
+    <img src="engage-horizontal-logo-color.jpg" alt="Engage Communications">
+  </header>
+
+  <main class="main-content">
+    <h1>SMS Terms &amp; Conditions</h1>
+    <p class="last-updated">Last updated: March 17, 2026</p>
+
+    <h2>Program Description</h2>
+    <p>Engage Communications provides SMS notifications to customers of security alarm companies we serve. Messages may include service alerts, appointment confirmations, account updates, and customer care communications.</p>
+
+    <h2>Opt-In</h2>
+    <p>You may receive SMS messages from Engage Communications if you provided your mobile phone number to your alarm company at the time of service enrollment or account setup. By providing your number, you consented to receive SMS communications from Engage Communications on behalf of your alarm service provider.</p>
+
+    <h2>Message Frequency</h2>
+    <p>Message frequency varies based on your account activity and service notifications. You may receive up to several messages per month.</p>
+
+    <h2>Message &amp; Data Rates</h2>
+    <p>Message and data rates may apply. Please contact your mobile carrier for details about your plan.</p>
+
+    <h2>Opt-Out</h2>
+    <p>To stop receiving SMS messages from Engage Communications at any time, reply <strong>STOP</strong> to any message. You will receive a confirmation and no further messages will be sent.</p>
+
+    <h2>Help</h2>
+    <p>For help or more information, reply <strong>HELP</strong> to any message, or contact us directly:</p>
+
+    <div class="keyword-box">
+      <p><strong>Phone:</strong> <a href="tel:3053200200">305-320-0200</a> / <a href="tel:8553642431">855-ENGAGE1</a></p>
+      <p><strong>Email:</strong> <a href="mailto:brad@engage.pro">brad@engage.pro</a></p>
+      <p><strong>Address:</strong> 412 White Street #101, Key West, FL 33040</p>
+    </div>
+
+    <h2>Supported Carriers</h2>
+    <p>Engage Communications SMS service is compatible with all major US carriers including AT&amp;T, T-Mobile, Verizon, and others. Carrier support may vary.</p>
+
+    <h2>Keywords</h2>
+    <div class="keyword-box">
+      <p><strong>STOP</strong> – Unsubscribe from all Engage Communications SMS messages</p>
+      <p><strong>HELP</strong> – Receive help information and contact details</p>
+    </div>
+
+    <h2>Privacy</h2>
+    <p>Your mobile number and personal information will not be sold or shared with third parties for marketing purposes. For full details, see our <a href="/privacy-policy">Privacy Policy</a>.</p>
+
+  </main>
+
+  <footer class="footer-widget">
+    <img src="cropped-engage-horizontal-logo-color.webp" alt="Engage Icon" class="footer-logo">
+    <strong>Engage Communications</strong>
+    <p>
+      412 White St, Unit 101<br>
+      Key West, FL 33040
+    </p>
+    <p>
+      <a href="tel:3053200200">305-320-0200</a><br>
+      <a href="tel:8553642431">+1 855-ENGAGE1</a>
+    </p>
+  </footer>
+
+</body>
+</html>
