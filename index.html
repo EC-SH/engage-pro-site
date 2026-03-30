@@ -3,116 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engage Communications</title>
+  <title>Engage Communications – Florida Business Telecommunications</title>
+  <meta name="description" content="Engage Communications is a Florida-licensed CLEC providing voice, SIP trunking, and hosted business communications services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <style>
-    /* Reset and base styles */
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      margin: 0;
-      padding: 0;
       background-color: #f4f4f9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 16px; /* Larger base font for mobile readability */
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
       color: #333;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Header & Logo */
+    a { color: #1a4fa0; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Header ── */
     .logo-bar {
       background: #ffffff;
-      padding: 15px 20px;
+      padding: 18px 24px;
       border-bottom: 2px solid #e0e0e0;
       text-align: center;
     }
 
     .logo-bar img {
-      max-width: 100%; /* Prevents logo from breaking mobile width */
+      max-width: 100%;
       height: auto;
-      max-height: 70px;
-      display: inline-block;
+      max-height: 60px;
     }
 
-    /* Main Content Area */
-    .main-content {
-      flex: 1; /* Pushes footer to the bottom */
+    /* ── Hero ── */
+    .hero {
+      background: #1a4fa0;
+      color: #ffffff;
       text-align: center;
-      padding: 40px 20px;
-      line-height: 1.6;
+      padding: 56px 24px 48px;
+    }
+
+    .hero h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      font-weight: 400;
+      opacity: 0.88;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    /* ── Services ── */
+    .services {
+      max-width: 820px;
+      width: 92%;
+      margin: -28px auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card {
       background: #ffffff;
-      margin: 30px auto;
-      max-width: 600px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      width: 90%;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border: 1px solid #eaeaea;
     }
 
-    .main-content p {
-      margin: 15px 0;
+    .service-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a4fa0;
+      margin-bottom: 8px;
     }
 
-    .main-content a {
-      color: #1a4fa0; /* Blue mapped from logo */
-      text-decoration: none;
+    .service-card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 580px) {
+      .services { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.4rem; }
+    }
+
+    /* ── About / Credibility ── */
+    .about {
+      max-width: 820px;
+      width: 92%;
+      margin: 40px auto;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .about h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .about p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.65;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .credential-row {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .credential {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1a4fa0;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* ── Contact ── */
+    .contact {
+      background: #ffffff;
+      max-width: 820px;
+      width: 92%;
+      margin: 0 auto 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border: 1px solid #eaeaea;
+      padding: 36px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      text-align: center;
+    }
+
+    .contact-section h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .contact-section a {
       font-weight: 500;
     }
 
-    .main-content a:hover,
-    .main-content a:active {
-      text-decoration: underline;
+    @media (max-width: 580px) {
+      .contact {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 28px 20px;
+      }
     }
 
-    /* Contact Cards for better mobile tap areas */
-    .contact-box {
-      background: #f9f9fc;
-      border: 1px solid #eaeaea;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 20px 0;
-    }
-
-    .contact-box p {
-      margin: 5px 0;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: #222;
-      margin-bottom: 25px !important;
-    }
-
-    /* Footer */
-    .footer-widget {
-      background: #222;
-      color: #f1f1f1;
-      padding: 40px 20px;
+    /* ── Footer ── */
+    .footer {
+      background: #1b1b1f;
+      color: #ccc;
+      padding: 36px 24px;
       text-align: center;
-      font-size: 14px;
-      line-height: 1.8;
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: auto;
     }
 
-    .footer-widget img.footer-logo {
-      width: 35px;
+    .footer img.footer-logo {
+      width: 32px;
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
+      opacity: 0.85;
     }
 
-    .footer-widget a {
-      color: #f1f1f1;
-      text-decoration: none;
-    }
-
-    .footer-widget strong {
+    .footer strong {
       display: block;
-      font-size: 16px;
-      margin-bottom: 10px;
+      font-size: 14px;
       color: #ffffff;
-      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      letter-spacing: 0.4px;
+    }
+
+    .footer a { color: #ccc; font-weight: 400; }
+    .footer a:hover { color: #fff; text-decoration: none; }
+
+    .footer-links {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #333;
+      font-size: 12px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+    }
+
+    .footer-copy {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #777;
     }
   </style>
 </head>
@@ -122,34 +239,78 @@
     <img src="engage-horizontal-logo-color.jpg" alt="Engage Communications">
   </header>
 
-  <main class="main-content">
-    <p class="subtitle">Local, Long Distance &amp; Toll-Free Telephone Services</p>
-    
-    <div class="contact-box">
-      <p><strong>SALES</strong></p>
-      <p><a href="tel:3053200200">305-320-0200</a> <br> <a href="tel:8553642431">855-ENGAGE1 (855-364-2431)</a></p>
+  <section class="hero">
+    <h1>Business Telecommunications<br>Built for Reliability</h1>
+    <p>Voice, data, and communications services for businesses that need it to just work.</p>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>Voice Services</h3>
+      <p>Local, long distance, and toll-free lines with carrier-grade reliability and competitive per-minute rates.</p>
     </div>
-
-    <div class="contact-box">
-      <p><strong>SERVICE</strong></p>
-      <p><a href="tel:3053200200">305-320-0200</a> <br> <a href="tel:8553642431">855-ENGAGE1 (855-364-2431)</a></p>
+    <div class="service-card">
+      <h3>SIP Trunking</h3>
+      <p>Scalable SIP connectivity for your existing PBX infrastructure. Flexible channel counts, straightforward pricing.</p>
     </div>
+    <div class="service-card">
+      <h3>Hosted Communications</h3>
+      <p>Fully managed business phone systems with voicemail, call routing, conferencing, and mobile integration.</p>
+    </div>
+    <div class="service-card">
+      <h3>Managed Solutions</h3>
+      <p>Custom voice and messaging infrastructure for organizations with specialized communications requirements.</p>
+    </div>
+  </section>
 
-    <p>Brad Nye – <a href="mailto:brad@engage.pro">brad@engage.pro</a></p>
-    <p>412 White Street #101<br>Key West, FL 33040</p>
-  </main>
+  <section class="about">
+    <h2>Why Engage</h2>
+    <p>Engage Communications is a Florida-licensed Competitive Local Exchange Carrier providing voice and data services to businesses across the state.</p>
+    <div class="credential-row">
+      <span class="credential">Florida Licensed CLEC</span>
+      <span class="credential">FCC Registered</span>
+      <span class="credential">CPNI Compliant</span>
+    </div>
+  </section>
 
-  <footer class="footer-widget">
-    <img src="cropped-engage-horizontal-logo-color.webp" alt="Engage Icon" class="footer-logo">
+  <section class="contact">
+    <div class="contact-section">
+      <h4>Sales</h4>
+      <p>
+        <a href="tel:3053200200">305-320-0200</a><br>
+        <a href="tel:8553642431">855-ENGAGE1</a><br>
+        <a href="mailto:sales@engage.pro">sales@engage.pro</a>
+      </p>
+    </div>
+    <div class="contact-section">
+      <h4>Support</h4>
+      <p>
+        <a href="tel:3053200200">305-320-0200</a><br>
+        <a href="tel:8553642431">855-ENGAGE1</a><br>
+        <a href="mailto:support@engage.pro">support@engage.pro</a>
+      </p>
+    </div>
+    <div class="contact-section">
+      <h4>Mailing Address</h4>
+      <p>
+        412 White Street #101<br>
+        Key West, FL 33040
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="cropped-engage-horizontal-logo-color.webp" alt="Engage" class="footer-logo">
     <strong>Engage Communications</strong>
     <p>
-      412 White St, Unit 101<br>
-      Key West, FL 33040
+      412 White St, Unit 101 · Key West, FL 33040<br>
+      <a href="tel:3053200200">305-320-0200</a> · <a href="tel:8553642431">855-ENGAGE1</a>
     </p>
-    <p>
-      <a href="tel:3053200200">305-320-0200</a><br>
-      <a href="tel:8553642431">+1 855-ENGAGE1</a>
-    </p>
+    <div class="footer-links">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/sms-terms">SMS Terms</a>
+    </div>
+    <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Engage Communications. All rights reserved.</p>
   </footer>
 
 </body>
